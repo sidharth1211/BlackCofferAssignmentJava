@@ -1,6 +1,5 @@
-package com.microservices.rest.webservices.restfulwebservices.exception;
+package com.microservices.rest.webservices.socialmedia.exception;
 
-import com.microservices.rest.webservices.restfulwebservices.users.UserNotFoundException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;

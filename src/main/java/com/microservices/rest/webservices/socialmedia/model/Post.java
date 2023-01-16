@@ -1,9 +1,8 @@
-package com.microservices.rest.webservices.restfulwebservices.users;
+package com.microservices.rest.webservices.socialmedia.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import javax.persistence.*;
-import java.util.Optional;
 
 @Entity
 public class Post {

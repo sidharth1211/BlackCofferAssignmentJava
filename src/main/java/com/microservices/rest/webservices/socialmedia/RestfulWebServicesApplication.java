@@ -1,4 +1,4 @@
-package com.microservices.rest.webservices.restfulwebservices;
+package com.microservices.rest.webservices.socialmedia;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

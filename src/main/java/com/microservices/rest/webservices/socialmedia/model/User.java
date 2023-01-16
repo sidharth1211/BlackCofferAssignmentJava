@@ -1,28 +1,26 @@
-package com.microservices.rest.webservices.restfulwebservices.users;
+package com.microservices.rest.webservices.socialmedia.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import org.springframework.stereotype.Component;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.OneToMany;
+import javax.persistence.*;
 import java.time.LocalDate;
 import java.util.List;
-
-@Entity(name="user_details")
+@Entity(name = "user_details")
 public class User {
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
+    @Column
     @JsonProperty("user_name")
     private String name;
+    @Column
     @JsonProperty("birth_date")
     private LocalDate birthDate;
     @OneToMany(mappedBy = "user")
     @JsonIgnore
     private List<Post> posts;
+
     protected User() {
     }
 

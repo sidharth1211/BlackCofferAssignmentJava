@@ -1,6 +1,4 @@
-package com.microservices.rest.webservices.restfulwebservices.exception;
-
-import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
+package com.microservices.rest.webservices.socialmedia.exception;
 
 import java.time.LocalDate;
 

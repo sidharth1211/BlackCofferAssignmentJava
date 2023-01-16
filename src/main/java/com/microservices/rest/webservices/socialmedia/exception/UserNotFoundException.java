@@ -1,4 +1,4 @@
-package com.microservices.rest.webservices.restfulwebservices.users;
+package com.microservices.rest.webservices.socialmedia.exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;
