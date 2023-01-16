@@ -1,10 +1,32 @@
 # BlackCofferAssignmentJava
-Social Media REST API
-This API is built using Java and Spring Boot. It allows users to interact with a social media platform, including posting and retrieving messages.
+# Social Media REST API
+This API is built using Java and Spring Boot. It allows users to interact with a social media platform, including posting, retrieving messages and creating users.
 
-Endpoints
-POST /api/post
-Create a new post on the social media platform.
+# API Authentication
+
+# Endpoints
+#GET http://localhost:8080/users
+Returns a List of all users
+
+#POST http://localhost:8080/users
+To create a new User do the following using Postman:
+1. Pass Authorization header:
+    Username : user
+    Password : password
+2. Pass JSON file in the following format:
+    {
+        "user_name":Sidharth,
+        "birth_date":"1998-11-12"
+    }
+
+#DELETE http://localhost:8080/users/{id}
+Delete a specific user.
+
+#GET http://localhost:8080/users/{id}
+return details of a specific user
+
+
+
 
 Request body should be in the following format:
 
